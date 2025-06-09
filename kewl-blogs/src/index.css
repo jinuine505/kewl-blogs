@@ -1,13 +1,158 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lexend", "Arial";
+  color: rgb(26, 26, 28);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(255, 255, 255, 0.95);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgb(177, 177, 177, 0.4);
+}
+.navbar h1 {
+  color: rgb(145, 82, 247);
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: rgb(145, 82, 247);
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-preview {
+  margin: 20px 0;
+  word-wrap: break-word;
+  padding: 10px;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  transition: 0.1s;
+  cursor: pointer;
+}
+.blog-preview:hover {
+  box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  color: rgb(145, 82, 247);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-details h2{
+  color: rgb(145, 82, 247);
+}
+.blog-details div{
+  margin: 20px 0px;
+}
+.blog-details button {
+  font-size: 18px;
+  background-color: rgb(225, 10, 10);
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.blog-details button:hover {
+  background-color: rgb(174, 0, 0);
+}
+
+.create {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  display: block;
+  text-align: left;
+}
+.create h2 {
+  color: rgb(145, 82, 247);
+  margin-bottom: 20px;
+}
+.create input, .create textarea, .create select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid rgb(239, 239, 239);
+  border-radius: 5px;
+}
+.create button {
+  font-size: 18px;
+  background-color: rgb(145, 82, 247);
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.create button:hover {
+  background-color: rgb(112, 24, 255);
+}
+
+.not-found {
+  text-align: center;
+}
+.not-found h2 {
+    color: rgb(145, 82, 247);
+}
+.not-found p {
+    margin-bottom: 10px;
+}
+.not-found a {
+  background-color: rgb(145, 82, 247);
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.not-found a:hover {
+  background-color: rgb(112, 24, 255);
+}
+
+/* --- React Bits --- */
+.squares-canvas {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.squares {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
