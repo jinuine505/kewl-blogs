@@ -3,8 +3,7 @@ A mock blog site for users to create and delete blogs.
 
 ## This Project Follows a Tutorial and Is Intended for Practice
 This mock blog was used to practice ReactJS and followed a tutorial created by Net Ninja.<br>
-You can find the video tutorial on [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) and the course files at [Complete-React-Tutorial
-Public](https://github.com/iamshaunjp/Complete-React-Tutorial).
+You can find the video tutorial on [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) and the course files at [Complete-React-Tutorial](https://github.com/iamshaunjp/Complete-React-Tutorial).
 
 ## Running Locally
 Prerequisites
